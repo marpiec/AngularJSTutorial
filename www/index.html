@@ -1,19 +1,30 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<html ng-app>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- AngularJS -->
+    <script type="text/javascript" src="lib/angular-js/angular.js"></script>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css">
+
+
+    <script type="text/javascript" src="js/application.js"></script>
+
 </head>
 <body>
+
     <br />
     <div class="container">
         <div class="jumbotron">
-            <h1>Hello <span class="label label-primary">AngularJS!</span></h1>
+            <h1><span class="label label-primary">AngularJS!</span> introduction session</h1>
             <br />
-            <p>AngularJS introduction session.</p>
+            <p>Basic templating capabilities</p>
+            <p>
+                Simple expression: 1 + 3 = {{ 1 + 3 }}
+            </p>
         </div>
     </div>
 
