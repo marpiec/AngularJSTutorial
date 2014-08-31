@@ -5,6 +5,7 @@
 
     <!-- AngularJS -->
     <script type="text/javascript" src="lib/angular-js/angular.js"></script>
+    <script type="text/javascript" src="lib/jQuery/jquery.js"></script>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
@@ -19,15 +20,14 @@
     <br />
     <div class="container">
         <div class="jumbotron">
-            <h1><span class="label label-primary">AngularJS!</span> introduction session</h1>
+            <h1><span class="label label-primary">AngularJS</span> introduction session</h1>
             <br />
-            <p>Controllers and model</p>
-            <p>
-                Hello {{ userName }}
-            </p>
-            <p>
-                Sample calculation: {{ calculation.a }} + {{ calculation.b }} = {{ calculation.c }}
-            </p>
+            <p>Action handlers and bidirectional bindings.</p>
+            <p>Say my name!</p>
+            <p><input type="text" ng-model="myName" class="form-control"></p>
+            <p>You will say: <span ng-bind="myName"></span></p>
+            <button class="btn btn-lg btn-success" ng-click="sayName()">say it...</button>
+            <p>{{ response }}</p>
         </div>
     </div>
 

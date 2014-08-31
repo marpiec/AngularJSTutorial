@@ -4,10 +4,14 @@ var app = angular.module("application", []);
 
 app.controller("HomePageController", function($scope) {
 
-    $scope.userName = "Marcin";
+    $scope.myName = "";
 
-    $scope.calculation = {a: 1, b: 2}
-
-    $scope.calculation.c = $scope.calculation.a + $scope.calculation.b;
+    $scope.sayName = function() {
+        if($scope.myName == "Heisenberg") {
+            $scope.response = "Correct!";
+        } else {
+            $scope.response = "No!";
+        }
+    }
 
 });
