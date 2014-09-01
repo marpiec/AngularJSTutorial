@@ -22,12 +22,12 @@
         <div class="jumbotron">
             <h1><span class="label label-primary">AngularJS</span> introduction session</h1>
             <br />
-            <p>Dependency injection and rest calls.</p>
+            <p>Directives.</p>
             <p>
                 Best Java Books:
                 <button ng-click="loadBooks()" ng-hide="booksLoaded" class="btn btn-xs btn-danger">Show Best Books</button>
                 <div ng-repeat="book in books">
-                    {{ book.title }}
+                    <mp-nice-book-title book="book" />
                 </div>
             </p>
         </div>

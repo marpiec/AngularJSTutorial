@@ -17,3 +17,20 @@ app.controller("HomePageController", function($scope, $http) {
     }
 
 });
+
+
+
+app.directive("mpNiceBookTitle", function() {
+    return {
+       scope: {
+           book : "="
+       },
+       restrict: "E",
+       template:"Title: {{ titleFormatted }} ",
+       link: function(scope) {
+            alert(scope.book.title);
+           scope.titleFormatted = scope.book.title.toUpperCase().replace(" ", "-");
+
+       }
+   }
+});
